@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background-color: #fefefe;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  header {
+    background: linear-gradient(to right, #8360c3, #2ebf91);
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+    color: #ffeb3b;
+  }
+  
+  .marquee p {
+    animation: scroll-left 10s linear infinite;
+    white-space: nowrap;
+  }
+  
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  
+  .marquee p {
+    display: inline-block;
+    animation: scroll-left 15s linear infinite;
+    padding-left: 100%;
+    font-style: italic;
+  }
+  
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  main {
+    padding: 40px 20px;
+  }
+  
+  section {
+    margin-bottom: 60px;
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  section:hover {
+    transform: translateY(-5px);
+  }
+  
+  section h2 {
+    color: #2ebf91;
+    margin-bottom: 20px;
+  }
+  
+  .content-with-image {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .content-with-image img {
+    max-width: 300px;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  section ul li {
+    margin-bottom: 8px;
+  }
+  
+  section ul li a {
+    color: #2ebf91;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.2s;
+  }
+  
+  section ul li a:hover {
+    color: #8360c3;
+    text-decoration: underline;
+  }
+  
+  footer {
+    background-color: #2b2b2b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .content-with-image {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  .video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+  }
+  
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .spotify-container {
+    margin-top: 20px;
+  }
+  
